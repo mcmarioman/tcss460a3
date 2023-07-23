@@ -1,0 +1,20 @@
+{
+  "name": "zodiac-api",
+  "version": "1.0.0",
+  "description": "tcss460 assignment 3",
+  "main": "app.js",
+  "scripts": {
+    "build": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "zodiac",
+    "api"
+  ],
+  "author": "mvidal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

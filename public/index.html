@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TCSS 460 - Assignment 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="mt-5 mb-5">
+        <div class="container text-light">
+          <h2>Zodiac Signs Horoscope</h2>
+        </div>
+    </header>
+    <section id="content">
+        <div id="main" class="container bg-light p-4">
+            <div class="row">
+                <div class="col-md-9">
+                    <label for="birthday" class="form-label">When is your birthday?</label>
+                    <input type="date" id="birthday" name="birthday" class="form-control picker" >
+                    <div id="traits-panel" class="mt-5">
+                        <h5>Personality Traits</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Strengths: <span id="strengths"></span></li>
+                            <li class="list-group-item">Weaknesses: <span id="Weaknesses"></span></li>
+                            <li class="list-group-item">Likes: <span id="likes"></span></li>
+                            <li class="list-group-item">Dislikes: <span id="dislikes"></span></li>                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="zodiac-panel" class="card" style="width: 18rem;">
+                        <img src="" alt="" id="icon" class="card-img-top">
+                        <div class="card-body">
+                          <h4 class="card-title text-center" id="sign"></h4>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Element: <span id="element"></span></li>
+                            <li class="list-group-item">Color: <span id="color"></span></li>
+                            <li class="list-group-item">Quality: <span id="element"></span></li>
+                            <li class="list-group-item">Day: <span id="quality"></span></li>
+                            <li class="list-group-item">Ruler: <span id="ruler"></span></li>
+                            <li class="list-group-item">Greatest Compatibility: <span id="greatest_compatibility"></span></li>
+                            <li class="list-group-item">Lucky Numbers: <span id="lucky_numbers"></span></li>
+                            <li class="list-group-item">Dates: <span id="dates"></span></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-sm-12">              
+                <p id="ft" class="fw-light text-light">&copy; Copyright law is too confusing. TCSS 460 Assignment 3 Summer 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script>
+
+        $(document).ready(function(){
+            $("#traits-panel").hide();
+            $("#zodiac-panel").hide();
+        });
+
+
+        $("#birthday").on("change", function() {
+            let bd = $("#birthday").val().split("-");            
+            let month = bd[1];
+            let day = bd[2];
+
+            $.get("http://localhost:3000/zodiac/sign/" + month + "/" + day, function (data){
+                let sign = data.zodiac_sign;
+                $("#sign").text(sign);
+                load_icon(sign);
+                load_info(sign);
+                load_traits(sign);
+                $("#traits-panel").fadeIn("slow");
+                $("#zodiac-panel").fadeIn("slow");
+            });
+
+        });
+
+        function load_icon(sign){
+
+            $.get("http://localhost:3000/zodiac/icon/" + sign, function (data){
+                let icon_url = data.zodiac_icon;
+                $("#icon").attr("src", icon_url);
+            });
+
+        }
+
+        function load_info(sign){
+            $.get("http://localhost:3000/zodiac/info/" + sign, function (data){
+                
+                Object.keys(data).forEach(function(key) {                    
+                    $("#" + key).text(data[key]);
+                })
+
+            });
+        }
+        function load_traits(sign){
+            $.get("http://localhost:3000/zodiac/traits/" + sign, function (data){
+                
+                Object.keys(data).forEach(function(key) {                    
+                    $("#" + key).text(data[key]);
+                })
+
+            });
+        }
+
+
+    </script>
+</body>
+</html>

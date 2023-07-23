@@ -1,0 +1,122 @@
+{
+    "Aquarius": {
+        "element": "Air",
+        "color": "Light-Blue, Silver",
+        "quality": "Fixed",
+        "day": "Saturday",        
+        "ruler": "Uranus, Saturn",
+        "greatest_compatibility": "Leo, Sagittarius",
+        "lucky_numbers": "4, 7, 11, 22, 29",
+        "dates": "January 20 - February 18"
+    },
+    "Pisces": {
+        "element": "Water",
+        "color": "Mauve, Lilac, Purple, Violet, Sea green",
+        "quality": "Mutable",
+        "day": "Thursday",        
+        "ruler": "Neptune, Jupiter",
+        "greatest_compatibility": "Virgo, Taurus",
+        "lucky_numbers": "3, 9, 12, 15, 18, 24",
+        "dates": "February 19 - March 20"
+    },
+    "Aries": {
+        "element": "Fire",
+        "color": "Red",
+        "quality": "Cardinal",
+        "day": "Tuesday",        
+        "ruler": "Mars",
+        "greatest_compatibility": "Libra, Leo",
+        "lucky_numbers": "1, 8, 17",
+        "dates": "March 21 - April 19"
+    },
+    "Taurus": {
+        "element": "Earth",
+        "color": "Green, Pink",
+        "quality": "Fixed",
+        "day": "Friday, Monday",        
+        "ruler": "Venus",
+        "greatest_compatibility": "Scorpio, Cancer",
+        "lucky_numbers": "2, 6, 9, 12, 24",
+        "dates": "April 20 - May 20"
+    },
+    "Gemini": {
+        "element": "Air",
+        "color": "Light-Green, Yellow",
+        "quality": "Mutable",
+        "day": "Wednesday",        
+        "ruler": "Mercury",
+        "greatest_compatibility": "Sagittarius, Aquarius",
+        "lucky_numbers": "5, 7, 14, 23",
+        "dates": "May 21 - June 20"
+    },
+    "Cancer": {
+        "element": "Water",
+        "color": "White",
+        "quality": "Cardinal",
+        "day": "Monday, Thursday",        
+        "ruler": "Moon",
+        "greatest_compatibility": "Capricorn, Taurus",
+        "lucky_numbers": "2, 3, 15, 20",
+        "dates": "June 21 - July 22"
+    },
+    "Leo": {
+        "element": "Fire",
+        "color": "Gold, Yellow, Orange",
+        "quality": "Fixed",
+        "day": "Sunday",        
+        "ruler": "Sun",
+        "greatest_compatibility": "Aquarius, Gemini",
+        "lucky_numbers": "1, 3, 10, 19",
+        "dates": "July 23 - August 22"
+    },
+    "Virgo": {
+        "element": "Earth",
+        "color": "Grey, Beige, Pale-Yellow",
+        "quality": "Mutable",
+        "day": "Wednesday",        
+        "ruler": "Mercury",
+        "greatest_compatibility": "Pisces, Cancer",
+        "lucky_numbers": "5, 14, 15, 23, 32",
+        "dates": "August 23 – September 22"
+    },
+    "Libra": {
+        "element": "Air",
+        "color": "Pink, Green",
+        "quality": "Cardinal",
+        "day": "Friday",        
+        "ruler": "Venus",
+        "greatest_compatibility": "Aries, Sagittarius",
+        "lucky_numbers": "4, 6, 13, 15, 24",
+        "dates": "September 23 - October 22"
+    },
+    "Scorpio": {
+        "element": "Water",
+        "color": "Scarlet, Red, Rust",
+        "quality": "Fixed",
+        "day": "Tuesday",        
+        "ruler": "Pluto, Mars",
+        "greatest_compatibility": "Taurus, Cancer",
+        "lucky_numbers": "8, 11, 18, 22",
+        "dates": "October 23 - November 21"
+    },
+    "Sagittarius": {
+        "element": "Fire",
+        "color": "Blue",
+        "quality": "Mutable",
+        "day": "Thursday",        
+        "ruler": "Jupiter",
+        "greatest_compatibility": "Gemini, Aries",
+        "lucky_numbers": "3, 7, 9, 12, 21",
+        "dates": "November 22 - December 21"
+    },
+    "Capricorn": {
+        "element": "Earth",
+        "color": "Brown, Black",
+        "quality": "Cardinal",
+        "day": "Saturday",        
+        "ruler": "Saturn",
+        "greatest_compatibility": "Taurus, Cancer",
+        "lucky_numbers": "4, 8, 13, 22",
+        "dates": "December 22 - January 19"
+    }
+}

@@ -1,0 +1,17 @@
+body{
+    font-family: "Verdana", sans-serif;
+    background-image: url('../img/zodiac_bg.jpg');
+}
+.picker{
+    width: 150px !important;
+}
+span{
+    color: darkgrey;
+}
+#main{
+    min-height: 600px;
+    border-radius: 25px;
+}
+h2, #ft{
+    text-shadow: 1px 1px 2px yellow, 0 0 1em blue, 0 0 0.2em blue;
+}

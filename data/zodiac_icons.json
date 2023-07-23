@@ -1,0 +1,14 @@
+{
+    "Aquarius": "http://localhost:3000/img/aquarius.webp",
+    "Pisces": "http://localhost:3000/img/pisces.webp",
+    "Aries": "http://localhost:3000/img/aries.webp",
+    "Taurus": "http://localhost:3000/img/taurus.webp",
+    "Gemini": "http://localhost:3000/img/gemini.webp",
+    "Cancer": "http://localhost:3000/img/cancer.webp",
+    "Leo": "http://localhost:3000/img/leo.webp",
+    "Virgo": "http://localhost:3000/img/virgo.webp",
+    "Libra": "http://localhost:3000/img/libra.webp",
+    "Scorpio": "http://localhost:3000/img/scorpio.webp",
+    "Sagittarius": "http://localhost:3000/img/sagittarius.webp",
+    "Capricorn": "http://localhost:3000/img/capricorn.webp"
+}
